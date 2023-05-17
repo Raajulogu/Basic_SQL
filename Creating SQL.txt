@@ -1,0 +1,19 @@
+Create Table IMBD(
+title text,
+genre text,
+reviews Float,
+Artist text,
+Role text,
+Skill text
+image blob
+)
+
+1. Insert into IMDB values("Beast","Action",4.5,"Vijay","Raw","Dancer","beast.png")
+
+2. Insert into IMDB values("Beast","Comedy",4.5,"Vijay","Raw","Dacer","vijay.png")
+
+3. Insert into IMDB values("Beast","Action",4,"Vijay","Raw","Dancer","vijay.png")
+
+4. Insert into IMDB values("Beast","Action",4.5,"Vijay","Raw","Good Acting","vijay.png")
+
+5. Insert into IMDB values("Beast","Action",4.5,"Vijay","Hero","Dancer","vijay.png")
