@@ -1,19 +1,32 @@
-Create Table IMBD(
+//1. Movie should have multiple media(Video or Image)
+
+Create Table movies(
 title text,
-genre text,
-reviews Float,
-Artist text,
-Role text,
-Skill text
-image blob
+image blob,
+video blob,
 )
 
-1. Insert into IMDB values("Beast","Action",4.5,"Vijay","Raw","Dancer","beast.png")
+//2.Movie can belongs to multiple Genre 
 
-2. Insert into IMDB values("Beast","Comedy",4.5,"Vijay","Raw","Dacer","vijay.png")
+Create Table Genre(
+title text,
+catagory text
+)
 
-3. Insert into IMDB values("Beast","Action",4,"Vijay","Raw","Dancer","vijay.png")
+//3.Movie can have multiple reviews and Review can belongs to a user
 
-4. Insert into IMDB values("Beast","Action",4.5,"Vijay","Raw","Good Acting","vijay.png")
+Create Table review(
+title text,
+review Create Table user(
+name text,
+review float
+))
 
-5. Insert into IMDB values("Beast","Action",4.5,"Vijay","Hero","Dancer","vijay.png")
+//4.Artist can have multiple skills
+and
+//5.Artist can perform multiple role in a single film
+Create Table Artist(
+title text,
+name text,
+skill text
+role text)
